@@ -1,6 +1,9 @@
+
+
 body {
     height: 100%;
     font-family: Roboto, sans-serif;
+
 }
 
 .navigation-bar {
@@ -25,10 +28,16 @@ body {
     font-size: 24px;
 }
 
-.navbar li a {
+
+a {
     text-decoration: none;
     color:white;
 }
+
+a:hover {
+    color:aqua;
+}
+
 
 ul {
     display: flex;
@@ -54,14 +63,83 @@ li {
 .title {
     font-size: 48px;
     width: 300px;
+    font-weight: 900;
 }
 
 .header-text > p {
     width: 450px;
+    filter: contrast(50%)
 }
 
 .header-image > img {
   width: 450px;
   height: auto;
   filter: brightness(180%) contrast(120%);
+}
+
+button {
+    padding: 5px 20px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.products-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.products-title {
+    font-weight: 900;
+    font-size:32px;
+    margin: 20px;
+}
+
+.brands {
+    display:flex;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cannondale, .trek, .specialized, .kona {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo {
+    width: 168px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.logo1 {
+    background-image: url(./images/cannondalelogo.png);
+}
+
+.logo2 {
+    background-image: url(./images/treklogo2.jpg);
+}
+
+.logo3 {
+    background-image: url(./images/specialized.png);
+}
+
+.logo4 {
+    
+    background-image: url(./images/KonaLogo.png);
+}
+
+.brand-reference {
+    max-width: 168px;
+    text-align: center;
 }
